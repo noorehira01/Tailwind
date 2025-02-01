@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Tech Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+        }
+        .product-img {
+            width: 100%;
+            height: 250px; 
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <header class="bg-gray-900 p-4 shadow-lg fixed w-full top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold tracking-wide">Obsidian Vault</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="hover:text-gray-400 transition">Home</a></li>
+                    <li><a href="#products" class="hover:text-gray-400 transition">Products</a></li>
+                    <li><a href="#about" class="hover:text-gray-400 transition">About Us</a></li>
+                    <li><a href="#contact" class="hover:text-gray-400 transition">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="text-center py-16 bg-gray-800 mt-16">
+        <h2 class="text-5xl font-bold uppercase tracking-wider">Welcome to Obsidian Vault</h2>
+        <p class="text-gray-400 mt-4 text-lg">Where the finest technology meets mystery. Discover the future of innovation in every sleek design. Unveil the extraordinary.</p>
+    </section>
+    <section id="products" class="container mx-auto py-12">
+        <h2 class="text-4xl font-semibold text-center mb-6">Our Premium Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="bg-gray-900 p-4 rounded-lg shadow-lg transform hover:scale-105 transition">
+                <img src="laptop.jpeg" alt="Luxury Laptop" class="product-img">
+                <h3 class="text-xl font-semibold mt-4">Luxury Laptop</h3>
+                <p class="text-gray-400">High-performance, sleek design.</p>
+                <p class="text-lg font-bold mt-2">$1,999</p>
+            </div>
+            <div class="bg-gray-900 p-4 rounded-lg shadow-lg transform hover:scale-105 transition">
+                <img src="Phone.jpeg" alt="Smartphone Pro" class="product-img">
+                <h3 class="text-xl font-semibold mt-4">Smartphone Pro</h3>
+                <p class="text-gray-400">Crystal-clear display, advanced camera.</p>
+                <p class="text-lg font-bold mt-2">$1660</p>
+            </div>
+            <div class="bg-gray-900 p-4 rounded-lg shadow-lg transform hover:scale-105 transition">
+                <img src="Earbuds.jpeg" alt="Wireless Earbuds" class="product-img">
+                <h3 class="text-xl font-semibold mt-4">Wireless Earbuds</h3>
+                <p class="text-gray-400">Immersive sound, long battery life.</p>
+                <p class="text-lg font-bold mt-2">$199</p>
+            </div>
+            <div class="bg-gray-900 p-4 rounded-lg shadow-lg transform hover:scale-105 transition">
+                <img src="Gamingconsole.jpeg" alt="Gaming Console" class="product-img">
+                <h3 class="text-xl font-semibold mt-4">Gaming Console</h3>
+                <p class="text-gray-400">Next-gen graphics and performance.</p>
+                <p class="text-lg font-bold mt-2">$499</p>
+            </div>
+            <div class="bg-gray-900 p-4 rounded-lg shadow-lg transform hover:scale-105 transition">
+                <img src="4kmonitor.jpeg" alt="4K Monitor" class="product-img">
+                <h3 class="text-xl font-semibold mt-4">4K Monitor</h3>
+                <p class="text-gray-400">Crystal clear, ultra-smooth display.</p>
+                <p class="text-lg font-bold mt-2">$599</p>
+            </div>
+            <div class="bg-gray-900 p-4 rounded-lg shadow-lg transform hover:scale-105 transition">
+                <img src="Machenicalkeyboard.jpeg" alt="Mechanical Keyboard" class="product-img">
+                <h3 class="text-xl font-semibold mt-4">Mechanical Keyboard</h3>
+                <p class="text-gray-400">Responsive, ergonomic, RGB lighting.</p>
+                <p class="text-lg font-bold mt-2">$129</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="bg-gray-800 py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-4">About Us</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+                We are a premium tech store, bringing you the latest innovations with luxury and style.
+            </p>
+        </div>
+    </section>
+    <section id="contact" class="bg-gray-900 py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-center mb-6">Contact Us</h2>
+            <form class="max-w-lg mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
+                <label class="block text-lg mb-2">Name:</label>
+                <input type="text" class="w-full p-2 rounded bg-gray-700 text-white" placeholder="Your Name">
+
+                <label class="block text-lg mt-4 mb-2">Email:</label>
+                <input type="email" class="w-full p-2 rounded bg-gray-700 text-white" placeholder="Your Email">
+
+                <label class="block text-lg mt-4 mb-2">Message:</label>
+                <textarea class="w-full p-2 rounded bg-gray-700 text-white" placeholder="Your Message"></textarea>
+
+                <button class="bg-gray-600 hover:bg-gray-500 text-white mt-4 px-6 py-2 rounded-lg transition">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-gray-900 p-6 mt-12">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between">
+            <p class="text-gray-400">&copy; 2025 Tech World. All Rights Reserved.</p>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-gray-400 transition">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-gray-400 transition">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
